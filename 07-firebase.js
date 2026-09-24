@@ -15,12 +15,12 @@
    Mientras esto esté vacío, la libreta funciona igual pero SOLO guardada en este navegador
    (sin cuentas ni sincronizar entre dispositivos) — nunca truena. */
 const FIREBASE_CONFIG={
-  apiKey:"",
-  authDomain:"",
-  projectId:"",
-  storageBucket:"",
-  messagingSenderId:"",
-  appId:""
+  apiKey:"AIzaSyADeb6seakaAb5mj-Ub5VJwjdOkH3iKGHo",
+  authDomain:"el-molino-d19a8.firebaseapp.com",
+  projectId:"el-molino-d19a8",
+  storageBucket:"el-molino-d19a8.firebasestorage.app",
+  messagingSenderId:"528092732392",
+  appId:"1:528092732392:web:35891e6f2819377f45225d"
 };
 const FIREBASE_READY=!!(FIREBASE_CONFIG.apiKey&&FIREBASE_CONFIG.projectId);
 

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+<!DOCTYPE html><html lang="es"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#9E2B25">
@@ -285,8 +283,7 @@ tfoot td{font-weight:600;border-top:1px solid var(--line2)}
 }
 </style>
 <div id="root"></div>
-</head>
-<body>
+</head><body>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
@@ -1302,12 +1299,12 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&(U.modal||U.confirm
    Mientras esto esté vacío, la libreta funciona igual pero SOLO guardada en este navegador
    (sin cuentas ni sincronizar entre dispositivos) — nunca truena. */
 const FIREBASE_CONFIG={
-  apiKey:"",
-  authDomain:"",
-  projectId:"",
-  storageBucket:"",
-  messagingSenderId:"",
-  appId:""
+  apiKey:"AIzaSyADeb6seakaAb5mj-Ub5VJwjdOkH3iKGHo",
+  authDomain:"el-molino-d19a8.firebaseapp.com",
+  projectId:"el-molino-d19a8",
+  storageBucket:"el-molino-d19a8.firebasestorage.app",
+  messagingSenderId:"528092732392",
+  appId:"1:528092732392:web:35891e6f2819377f45225d"
 };
 const FIREBASE_READY=!!(FIREBASE_CONFIG.apiKey&&FIREBASE_CONFIG.projectId);
 
@@ -1535,5 +1532,4 @@ setTimeout(()=>{if(U.booting){U.bootSlow=true;render()}},4000);
 })();
 </script>
 <script>if("serviceWorker" in navigator){window.addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").catch(()=>{})})}</script>
-</body>
-</html>
+</body></html>

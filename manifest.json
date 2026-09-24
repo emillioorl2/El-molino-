@@ -1,0 +1,17 @@
+{
+  "name": "El Molino — Finanzas personales",
+  "short_name": "El Molino",
+  "description": "Registro personal de ingresos, gastos, tarjetas, deudas, préstamos y cajas de ahorro.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F2ECDD",
+  "theme_color": "#9E2B25",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

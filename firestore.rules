@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Las cuentas viven bajo un hash de tu usuario (no tu usuario en texto plano).
+    // El contenido ya está cifrado en el navegador, así que solo pedimos que
+    // quien lea/escriba esté autenticado (aunque sea de forma anónima) para
+    // frenar bots al azar. Cambia esto si algún día quieres reglas más finas.
+    match /cuentas/{hash} {
+      allow read, write: if request.auth != null;
+    }
+    // Los "escrow" de recuperación (la copia de tu llave de cifrado protegida
+    // por tu correo de recuperación) solo los puede leer o escribir la
+    // identidad de Firebase Authentication dueña de ese uid.
+    match /data/users/{uid}/{doc=**} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}
